@@ -1,7 +1,7 @@
 # Katalog Perpustakaan
 
 Website katalog perpustakaan yang datanya diambil langsung dari Google
-Spreadsheet — tanpa database, tanpa hosting berbayar. Alurnya:
+Spreadsheet. Alurnya:
 
 ```
 Excel (13.253 buku) → Google Spreadsheet → Google Apps Script (API) → React (Vite + Tailwind) → GitHub Pages

@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/KATALOG-RUANG-KOLEKSI-LANGKA/',
+  base: '/Katalog-Ruang-Koleksi-Langka/',
 })

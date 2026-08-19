@@ -1,32 +1,3 @@
-/**
- * KATALOG PERPUSTAKAAN — Google Apps Script API
- * ================================================
- * Script ini membaca data dari Google Spreadsheet dan menyajikannya
- * sebagai JSON API gratis yang bisa diakses oleh website React.
- *
- * CARA PAKAI:
- * 1. Buka Google Spreadsheet yang berisi data buku (13.253 baris).
- *    Baris pertama HARUS berisi nama kolom (header), contoh:
- *    No | Nomor Panggil | Judul | Pengarang | Edisi | Penerbit |
- *    Kota Terbit | Tahun Terbit | ISBN | Deskripsi Fisik | Subjek |
- *    Klasifikasi | Lokasi | Bahasa | Catatan
- *    (Nama kolom bebas — script ini otomatis menyesuaikan header apa pun.)
- *
- * 2. Di spreadsheet, buka menu: Extensions/Ekstensi > Apps Script.
- * 3. Hapus isi default Code.gs, lalu tempel (paste) seluruh isi file ini.
- * 4. Ganti SHEET_NAME di bawah jika nama sheet/tab kamu bukan "Data".
- * 5. Klik Deploy > New deployment (Deploy Baru).
- *    - Type: Web app
- *    - Execute as: Me
- *    - Who has access: Anyone (Siapa saja)
- * 6. Salin URL Web App yang muncul (diakhiri /exec).
- * 7. Tempelkan URL itu ke file .env di project React sebagai VITE_API_URL.
- *
- * Setiap kali admin mengubah/menambah data di spreadsheet, cukup buka
- * ulang website (atau klik "Segarkan data") — TIDAK perlu deploy ulang,
- * TIDAK perlu edit kode apa pun.
- */
-
 const SHEET_NAME = 'Sheet1'; // Ganti sesuai nama tab/sheet kamu
 
 function doGet(e) {
